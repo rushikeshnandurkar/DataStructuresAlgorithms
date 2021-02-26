@@ -1,14 +1,12 @@
-package doubly_linked_list;
+package stack;
 
 public class Node<T> {
     private T nodeData;
     private Node<T> next;
-    private Node<T> prev;
 
     public Node(T nodeData) {
         this.nodeData = nodeData;
         this.next = null;
-        this.prev = null;
     }
 
     public T getNodeData() {
@@ -25,13 +23,5 @@ public class Node<T> {
 
     public void setNext(Node<T> next) {
         this.next = next;
-    }
-
-    public Node<T> getPrev() {
-        return prev;
-    }
-
-    public void setPrev(Node<T> prev) {
-        this.prev = prev;
     }
 }
